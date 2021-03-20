@@ -1,1 +1,102 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply Blogging</title>
+   
+  <script src="simpleBlogging.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link rel="stylesheet" href="simpleBlogging.css">
+</head>
+<body>
+
+  <div class="card text-center">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Search blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact us</a>
+        </li>
+      </ul>
+    </div>
+    <div id="top" class="card-body">
+      <h5 class="card-title"><h3>Welcome to Simply Blogging </h3>
+
+    </div>
+  </div>
+
+
+
+  <br>
+
+
+
+  <form class ="mb-3">
+  <label ><h5>Title</h5>  </label>
+    
+  
+  <input type="text" id="title"   class="form-control"/>
+  <label ><h5>Articles</h5></label>
+    
+  <textarea type="text" id="desc"  class="form-control" row= "3"></textarea>
+ 
+  <input type="file" id="imageId"/>
+  <br>
+  
+
+  <div class="row g-1">
+  <button type="button" class="btn btn-success" onclick="addBlog()" ><h5>Add Blog</h5>  </button>
+  <button type="button" class="btn btn-secondary" onclick="reset()" ><h5>Clear</h5></button>
+</div>
+  <hr/>
+
+</form> 
+<!-- 
+  <table id="employeeDetails">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th> 
+            <th>image</th>
+            <th>delete</th>
+        </tr>
+    </thead>
+    <tbody>
+       
+       
+    </tbody>
+</table>
+ -->
+<!--   <div>
+      <div id="titleInfo"></div>
+      <div id="descInfo"></div>
+      <img src="" id="imageInfo"/>
+  </div> -->
+
+<table id="employeeDetails" class="table table-striped">
+  <thead>
+    <tr>
+
+      <th scope="col">Title</th>
+      <th scope="col">Articles</th>
+      <th scope="col">image if required</th>
+      <th scope="col">delete</th>
+    </tr>
+  </thead>
+  <tbody>
+ 
+  </tbody>
+</table>
+
+
+
+
+</body>
+</html>
